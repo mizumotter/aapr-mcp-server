@@ -1,0 +1,5 @@
+requests>=2.31
+# keyless (keypair) and OIDC auth
+cryptography>=42
+# keypair auth only: OS keychain access
+keyring>=25
