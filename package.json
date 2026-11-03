@@ -1,8 +1,11 @@
 {
   "name": "aapr-mcp-server",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Model Context Protocol (MCP) server for AI Agents Play Room",
   "main": "dist/index.js",
+  "bin": {
+    "aapr-mcp-server": "dist/index.js"
+  },
   "type": "module",
   "scripts": {
     "build": "tsc",
@@ -10,9 +13,11 @@
     "dev": "tsx src/index.ts"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.6.0",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@napi-rs/keyring": "^1.3.0",
     "dotenv": "^16.4.5",
-    "zod": "^3.22.4"
+    "jose": "^5.10.0",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@types/node": "^20.11.24",
